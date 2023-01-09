@@ -1,0 +1,90 @@
+2022-05-16 21:45:40.961  INFO 21796 --- [restartedMain] com.lmq.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-3OKEA2HC with PID 21796 (D:\毕业设计\myblog\target\classes started by 16541 in D:\毕业设计\myblog)
+2022-05-16 21:45:40.971  INFO 21796 --- [restartedMain] com.lmq.MyblogApplication                : The following 1 profile is active: "dev"
+2022-05-16 21:45:41.183  INFO 21796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-16 21:45:41.183  INFO 21796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-16 21:45:43.975  INFO 21796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-16 21:45:44.224  INFO 21796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 211 ms. Found 5 JPA repository interfaces.
+2022-05-16 21:45:46.030  INFO 21796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-05-16 21:45:46.041  INFO 21796 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-16 21:45:46.042  INFO 21796 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-16 21:45:46.205  INFO 21796 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-16 21:45:46.205  INFO 21796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4991 ms
+2022-05-16 21:45:46.747  INFO 21796 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-16 21:45:47.014  INFO 21796 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-16 21:45:47.420  INFO 21796 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-16 21:45:47.691  INFO 21796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-16 21:45:47.707  WARN 21796 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-16 21:45:48.493  INFO 21796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-16 21:45:48.661  INFO 21796 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-16 21:45:50.694  INFO 21796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-16 21:45:50.747  INFO 21796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-16 21:45:53.361  WARN 21796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-16 21:45:54.341  INFO 21796 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-16 21:45:56.308  INFO 21796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-16 21:45:56.406  INFO 21796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-05-16 21:45:56.426  INFO 21796 --- [restartedMain] com.lmq.MyblogApplication                : Started MyblogApplication in 16.681 seconds (JVM running for 23.272)
+2022-05-16 21:46:06.438  INFO 21796 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-16 21:46:06.438  INFO 21796 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-16 21:46:06.439  INFO 21796 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-16 21:46:06.502  INFO 21796 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : Request RequestLog{url='http://127.0.0.1:8089/', ip='127.0.0.1', classMethod='com.lmq.web.IndexController.index', args=[Page request [number: 0, size 7, sort: updateTime: DESC], {}]}
+2022-05-16 21:46:06.740  WARN 21796 --- [http-nio-8089-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-05-16 21:46:06.751  WARN 21796 --- [http-nio-8089-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-05-16 21:46:06.762  INFO 21796 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : Result : index
+2022-05-16 21:46:06.762  INFO 21796 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : ===============doAfter==================
+2022-05-16 21:48:12.412  INFO 21796 --- [http-nio-8089-exec-2] com.lmq.aspect.LogAspect                 : Request RequestLog{url='http://127.0.0.1:8089/', ip='127.0.0.1', classMethod='com.lmq.web.IndexController.index', args=[Page request [number: 1, size 7, sort: updateTime: DESC], {}]}
+2022-05-16 21:48:12.511  INFO 21796 --- [http-nio-8089-exec-2] com.lmq.aspect.LogAspect                 : Result : index
+2022-05-16 21:48:12.512  INFO 21796 --- [http-nio-8089-exec-2] com.lmq.aspect.LogAspect                 : ===============doAfter==================
+2022-05-16 21:48:26.400  INFO 21796 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : Request RequestLog{url='http://127.0.0.1:8089/blog/133', ip='127.0.0.1', classMethod='com.lmq.web.IndexController.blog', args=[133, {}]}
+2022-05-16 21:48:26.626  INFO 21796 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : Result : blog
+2022-05-16 21:48:26.627  INFO 21796 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : ===============doAfter==================
+2022-05-16 21:48:46.447  INFO 21796 --- [http-nio-8089-exec-8] com.lmq.aspect.LogAspect                 : Request RequestLog{url='http://127.0.0.1:8089/comments', ip='127.0.0.1', classMethod='com.lmq.web.CommentController.post', args=[Comment{id=null, nickname='1111', email='1651391202@qq.com', content='1111', avatar='null', createTime=null, blog=Blog{id=133, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentable=false, published=false, recommend=false, createTime=null, updateTime=null, description='null', user=null, type=null, tags=[], comments=[], tagIds='null'}, isAdmin=null}, org.apache.catalina.session.StandardSessionFacade@4c83d004, {comment=Comment{id=null, nickname='1111', email='1651391202@qq.com', content='1111', avatar='null', createTime=null, blog=Blog{id=133, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentable=false, published=false, recommend=false, createTime=null, updateTime=null, description='null', user=null, type=null, tags=[], comments=[], tagIds='null'}, isAdmin=null}, org.springframework.validation.BindingResult.comment=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2022-05-16 21:48:46.814  INFO 21796 --- [http-nio-8089-exec-8] com.lmq.aspect.LogAspect                 : Result : redirect:/comments/133
+2022-05-16 21:48:46.815  INFO 21796 --- [http-nio-8089-exec-8] com.lmq.aspect.LogAspect                 : ===============doAfter==================
+2022-05-16 21:48:46.856  INFO 21796 --- [http-nio-8089-exec-4] com.lmq.aspect.LogAspect                 : Request RequestLog{url='http://127.0.0.1:8089/comments/133', ip='127.0.0.1', classMethod='com.lmq.web.CommentController.comments', args=[133, {}]}
+2022-05-16 21:48:46.863  INFO 21796 --- [http-nio-8089-exec-4] com.lmq.aspect.LogAspect                 : Result : blog :: commentList
+2022-05-16 21:48:46.864  INFO 21796 --- [http-nio-8089-exec-4] com.lmq.aspect.LogAspect                 : ===============doAfter==================
+2022-05-16 21:49:09.594  INFO 21796 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : Request RequestLog{url='http://127.0.0.1:8089/tags/-1', ip='127.0.0.1', classMethod='com.lmq.web.TagController.tags', args=[Page request [number: 0, size 50, sort: updateTime: DESC], -1, {}]}
+2022-05-16 21:49:09.647  INFO 21796 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : Result : tags
+2022-05-16 21:49:09.648  INFO 21796 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : ===============doAfter==================
+2022-05-16 21:49:10.202  INFO 21796 --- [http-nio-8089-exec-10] com.lmq.aspect.LogAspect                 : Request RequestLog{url='http://127.0.0.1:8089/types/-1', ip='127.0.0.1', classMethod='com.lmq.web.TypeController.types', args=[Page request [number: 0, size 50, sort: createTime: ASC], -1, {}]}
+2022-05-16 21:49:10.222  INFO 21796 --- [http-nio-8089-exec-10] com.lmq.aspect.LogAspect                 : Result : types
+2022-05-16 21:49:10.223  INFO 21796 --- [http-nio-8089-exec-10] com.lmq.aspect.LogAspect                 : ===============doAfter==================
+2022-05-16 22:09:51.402  INFO 17472 --- [restartedMain] com.lmq.MyblogApplication                : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-3OKEA2HC with PID 17472 (D:\毕业设计\myblog\target\classes started by 16541 in D:\毕业设计\myblog)
+2022-05-16 22:09:51.418  INFO 17472 --- [restartedMain] com.lmq.MyblogApplication                : The following 1 profile is active: "dev"
+2022-05-16 22:09:51.611  INFO 17472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-16 22:09:51.612  INFO 17472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-16 22:09:54.797  INFO 17472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-16 22:09:54.969  INFO 17472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 5 JPA repository interfaces.
+2022-05-16 22:09:57.114  INFO 17472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-05-16 22:09:57.125  INFO 17472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-16 22:09:57.126  INFO 17472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-16 22:09:57.382  INFO 17472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-16 22:09:57.383  INFO 17472 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5769 ms
+2022-05-16 22:09:58.571  INFO 17472 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-16 22:09:58.915  INFO 17472 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-05-16 22:09:59.552  INFO 17472 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-16 22:09:59.964  INFO 17472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-16 22:10:00.002  WARN 17472 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-16 22:10:01.520  INFO 17472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-16 22:10:01.625  INFO 17472 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-16 22:10:04.511  INFO 17472 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-16 22:10:04.575  INFO 17472 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-16 22:10:06.816  WARN 17472 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-16 22:10:07.773  INFO 17472 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-16 22:10:08.634  INFO 17472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-16 22:10:08.727  INFO 17472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-05-16 22:10:08.746  INFO 17472 --- [restartedMain] com.lmq.MyblogApplication                : Started MyblogApplication in 19.191 seconds (JVM running for 21.618)
+2022-05-16 22:10:23.866  INFO 17472 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-16 22:10:23.867  INFO 17472 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-16 22:10:23.870  INFO 17472 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-16 22:10:23.963  INFO 17472 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : Request RequestLog{url='http://127.0.0.1:8089/', ip='127.0.0.1', classMethod='com.lmq.web.IndexController.index', args=[Page request [number: 0, size 7, sort: updateTime: DESC], {}]}
+2022-05-16 22:10:24.335  WARN 17472 --- [http-nio-8089-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-05-16 22:10:24.371  WARN 17472 --- [http-nio-8089-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-05-16 22:10:24.395  INFO 17472 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : Result : index
+2022-05-16 22:10:24.395  INFO 17472 --- [http-nio-8089-exec-1] com.lmq.aspect.LogAspect                 : ===============doAfter==================
+2022-05-16 22:10:32.066  INFO 17472 --- [http-nio-8089-exec-8] com.lmq.aspect.LogAspect                 : Request RequestLog{url='http://127.0.0.1:8089/', ip='127.0.0.1', classMethod='com.lmq.web.IndexController.index', args=[Page request [number: 1, size 7, sort: updateTime: DESC], {}]}
+2022-05-16 22:10:32.118  INFO 17472 --- [http-nio-8089-exec-8] com.lmq.aspect.LogAspect                 : Result : index
+2022-05-16 22:10:32.118  INFO 17472 --- [http-nio-8089-exec-8] com.lmq.aspect.LogAspect                 : ===============doAfter==================
+2022-05-16 22:10:36.005  INFO 17472 --- [http-nio-8089-exec-5] com.lmq.aspect.LogAspect                 : Request RequestLog{url='http://127.0.0.1:8089/blog/118', ip='127.0.0.1', classMethod='com.lmq.web.IndexController.blog', args=[118, {}]}
+2022-05-16 22:10:36.453  INFO 17472 --- [http-nio-8089-exec-5] com.lmq.aspect.LogAspect                 : Result : blog
+2022-05-16 22:10:36.453  INFO 17472 --- [http-nio-8089-exec-5] com.lmq.aspect.LogAspect                 : ===============doAfter==================

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+    <title>关于我</title>
+</head>
+<body>
+<!--导航-->
+<nav th:replace="_fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-tiny m-shadow-small">
+    <div class="ui m-container-big">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">LiMengQi</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>专栏</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>时间轴</a>
+            <a href="#" class="active m-item item m-mobile-hide"><i class="chess knight icon"></i>关于我</a>
+            <div class="right item">
+                <!--    inverted transparent-->
+                <div class="ui icon input">
+                    <input type="text" placeholder="搜索">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--手机端-->
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+
+
+
+</nav>
+
+<!--body-->
+<div class="m-container-y m-padded-tb-big">
+    <div class="ui m-container">
+
+        <div class="ui grid stackable">
+            <!--左边图片-->
+            <div class="eleven wide column">
+                <img src="https://picsum.photos/id/152/800/700" alt="">
+            </div>
+
+
+            <!--右边说明-->
+            <div class="five wide column">
+                <div class="ui top attached segment">
+                    <div class="ui header">关于我</div>
+                </div>
+
+                <div class="ui attached segment">
+                    <p>欢迎访问我的博客</p>
+                    <p>不断的学习和进步中......</p>
+                    <p>朋友们有什么问题可以通过邮箱、微信、QQ联系我</p>
+                </div>
+
+                <div class="ui attached segment">
+                    <div class="ui orange basic label left">编程</div>&nbsp;
+                    <div class="ui orange basic label left">编程</div>&nbsp;
+                    <div class="ui orange basic label left">编程</div>&nbsp;
+                    <div class="ui orange basic label left">编程</div>&nbsp;
+                    <div class="ui orange basic label left">编程</div>
+                </div>
+
+                <div class="ui attached segment">
+                    <div class="ui blue basic label left m-margin-tb-tiny">Java</div>&nbsp;
+                    <div class="ui blue basic label left m-margin-tb-tiny">JavaScript</div>&nbsp;
+                    <div class="ui blue basic label left m-margin-tb-tiny">C++</div>&nbsp;
+                    <div class="ui blue basic label left m-margin-tb-tiny">C</div>&nbsp;
+                    <div class="ui blue basic label left m-margin-tb-tiny">Python</div>
+
+                </div>
+
+
+                <div class="ui bottom attached segment">
+
+                    <a href="#" class="ui github circular icon button" data-content="https://gitee.com/limengqiii">
+                        <i class="github icon"></i>
+                    </a>
+
+                    <a href="#" class="ui wechat circular icon button" >
+                        <i class="weixin icon"></i>
+                    </a>
+
+                    <a href="#" class="ui qq circular icon button" data-content="1654139120">
+                        <i class="qq icon"></i>
+                    </a>
+
+
+                </div>
+
+
+                <div class="ui wechat-qr flowing popup transition hidden">
+                    <img src="../static/images/QRcode.jpg" th:src="@{/images/QRcode.jpg}" alt="" class="ui rounded image" style="width: 100px">
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<br>
+
+
+<!-- 底部-->
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned m-container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <script>
+                            for (let i = 0; i < 30; i++) {
+                                document.write("&nbsp;");
+                            }
+                        </script>
+                        <img src="../static/images/QRcode.jpg" class="ui rounded image" alt=""
+                             style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+                    <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+                    <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin">limengqi0505@163.com</a>
+                    <a href="#" class="item m-text-thin">QQ：1654139120</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">我的个人博客,会分享计算机、数学、生活相关内容，欢迎收藏</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny" style="text-align:center">Copyright © 2021 - 2022 Limengqi
+            Designed by
+            Limengqi</p>
+    </div>
+
+</footer>
+
+
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+<script src="../static/lib/dist/semantic.js" th:src="@{/lib/dist/semantic.js}"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>-->
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide'); //有=>去除 没有=>加上
+    });
+
+    $('.qq').popup({
+        position: 'top center'
+    });
+
+    $('.github').popup({
+        position: 'top center'
+    });
+
+    $('.wechat').popup({
+        popup: $('.wechat-qr.popup'),
+        on: 'hover',
+        position: 'top center'
+    });
+
+
+
+</script>
+
+
+</body>
+</html>
